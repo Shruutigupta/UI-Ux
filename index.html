@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Appliance Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Appliance Card for AC -->
+        <div class="appliance-card">
+            <h3>Air Conditioner</h3>
+            <label class="switch">
+                <input type="checkbox" id="acToggle">
+                <span class="slider round"></span>
+            </label>
+            <div class="control">
+                <label for="acTemp">Temperature:</label>
+                <input type="range" id="acTemp" min="16" max="30">
+            </div>
+        </div>
+
+        <!-- Appliance Card for Fan -->
+        <div class="appliance-card">
+            <h3>Fan</h3>
+            <label class="switch">
+                <input type="checkbox" id="fanToggle">
+                <span class="slider round"></span>
+            </label>
+            <div class="control">
+                <label for="fanSpeed">Speed:</label>
+                <input type="range" id="fanSpeed" min="1" max="5">
+            </div>
+        </div>
+
+        <!-- Appliance Card for Light -->
+        <div class="appliance-card">
+            <h3>Light</h3>
+            <label class="switch">
+                <input type="checkbox" id="lightToggle">
+                <span class="slider round"></span>
+            </label>
+            <div class="control">
+                <label for="lightBrightness">Brightness:</label>
+                <input type="range" id="lightBrightness" min="0" max="100">
+            </div>
+            <div class="control">
+                <label for="lightColor">Color:</label>
+                <input type="color" id="lightColor" value="#ffffff">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
